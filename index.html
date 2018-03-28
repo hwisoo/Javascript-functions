@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+        <div class="jumbotron jumbotron bg-primary text-white text-center">
+                <div class="container">
+                        <h1 class="display-4">Javascript Functions</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Current Day and Time</h5>
+                              <p class="card-text">Get day and time.</p>
+                              <p class="card-text" id="timer"></p>
+                              <a href="#" class="btn btn-primary" onclick="dayAndTime()">Run Function</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Current Date Formatted</h5>
+                              <p class="card-text">Get the current date and in various formats.</p>
+                              <p class="card-text" id="date"></p>
+                              <p class="card-text" id="date2"></p>
+                              <p class="card-text" id="date3"></p>
+                              <p class="card-text" id="date4"></p>
+                              <a href="#" class="btn btn-primary" onclick="formattedDate()">Run Function</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Print Page</h5>
+                                    <p class="card-text">Click below to Print the current page.</p>
+                                    <a href="#" class="btn btn-primary" onclick="print_current_page()">Run Function</a>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+                
+                <div class="row">
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Random Number Game</h5>
+                              <p class="card-text">Guess the random number.</p>
+                              <p class="card-text" id="timer"></p>
+                              <a href="#" class="btn btn-primary" onclick="randomNumber()">Run Function</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Create Multiplication Table</h5>
+                              <p class="card-text">Create a custom multiplication table by with rows and columns.</p>
+                              <div id="mtable"></div>
+                              <a href="#" class="btn btn-primary" onclick="createTable()">Run Function</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Mouse Hover Function</h5>
+                                    <p class="card-text">Move mouse to hover over button.</p>
+                                    <a href="#" class="btn btn-primary" id="hover">Run Function</a>
+                                  </div>
+                                </div>
+                              </div>
+                    </div>
+                      <script src="main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+</body>
+</html>
