@@ -60,22 +60,25 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-4">
-                          <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title">Create Multiplication Table</h5>
-                              <p class="card-text">Create a custom multiplication table by with rows and columns.</p>
-                              <div id="mtable"></div>
-                              <a href="#" class="btn btn-primary" onclick="createTable()">Run Function</a>
-                            </div>
-                          </div>
-                        </div>
+                       
                         <div class="col-sm-4">
                                 <div class="card">
                                   <div class="card-body">
-                                    <h5 class="card-title">Mouse Hover Function</h5>
-                                    <p class="card-text">Move mouse to hover over button.</p>
-                                    <a href="#" class="btn btn-primary" id="hover">Run Function</a>
+                                    <h5 class="card-title">Forward and Back Buttons</h5>
+                                    <p class="card-text">Move forward and back in the browser.</p>
+                                    <a href="#" class="btn btn-primary" id="back" onclick="goBack()">Back</a>
+                                    <a href="#" class="btn btn-primary" id="forward" onclick="goForward()">Forward</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-4">
+                                <div class="card">
+                                  <div class="card-body" id="bgColor">
+                                    <h5 class="card-title">Change Background Color</h5>
+                                    <p class="card-text">Click to change the background color.</p>
+                                    <a href="#" class="btn btn-primary" onclick="changeColor()">Run Function</a>
+                                    <a href="#" class="btn btn-primary" onclick="changeBack()">Change Back</a>
                                   </div>
                                 </div>
                               </div>
