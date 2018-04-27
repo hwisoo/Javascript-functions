@@ -1,3 +1,7 @@
+// Greeting!
+function displayMessage(firstName) {
+    alert("Hello " + firstName + ", welcome to JavaScript functions!");
+}
 // 1.Date and Time Function
 
  function dayAndTime() {
@@ -65,9 +69,6 @@ document.getElementById("date").innerHTML =(today);
 today = mm+'/'+dd+'/'+yyyy;
 document.getElementById("date2").innerHTML =(today);
 today = dd+'-'+mm+'-'+yyyy;
-document.getElementById("date3").innerHTML =(today);
-today = dd+'/'+mm+'/'+yyyy;
-document.getElementById("date4").innerHTML =(today);
 }
 
 
@@ -95,7 +96,35 @@ function randomNumber(){
 
 } 
 
+// Area of a Triangle
 
+function triArea(){
+
+var a = parseInt(prompt("Enter first side of triangle"));
+
+var b = parseInt(prompt("Enter second side of triangle"));
+
+var c = parseInt(prompt("Enter third side of triangle"));
+
+// var a = 5;
+
+// var b = 6;
+
+// var c = 7;
+
+var s = (a + b + c) / 2;
+
+// earlier error b/c spacing considered inner brackets a function
+
+var ss = s*(s - a)*(s - b)*(s - c);
+
+var area = Math.sqrt(ss);
+
+console.log(area);
+
+document.getElementById("area").innerHTML = area;
+
+}
 
 // 5. Forward and Back Buttons
 

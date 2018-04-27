@@ -1,0 +1,14 @@
+
+
+.card {
+    min-height: 200px;
+}
+
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    margin: 5px;
+}
