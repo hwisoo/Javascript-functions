@@ -12,6 +12,12 @@ function reverseString(str) {
  alert("Your string reversed is :  " + str +".")
 }
 
+// Capitalize a string
+function capitalizeString(str) {
+    var res = str.toUpperCase();
+    alert("Your string capitalized is: " + res + ".")
+}
+
 //  Date and Time Function
 
  function dayAndTime() {
@@ -79,6 +85,12 @@ document.getElementById("date").innerHTML =(today);
 today = mm+'/'+dd+'/'+yyyy;
 document.getElementById("date2").innerHTML =(today);
 today = dd+'-'+mm+'-'+yyyy;
+}
+
+// Convert date to UTC string
+function utcString() {
+    var today = new Date();
+    document.getElementById("utc").innerHTML = today.toUTCString();
 }
 
 
@@ -168,17 +180,8 @@ function trigger()
         document.getElementById("bgColor").style.backgroundColor = "white";
     }
 
-// 8. Change Font Color
 
-    function fontColor() {
-        document.getElementById("fontColor").style.color = "red";
-    }
-
-    function fontColorBack() {
-        document.getElementById("fontColor").style.color= "black";
-    }
-
-// 9. Random Background Color
+//  Random Background Color
 
 function getRandomColor(){
   let letters = '0123456789ABCDEF';
@@ -197,6 +200,14 @@ function changeBackBody(){
   document.body.style.backgroundColor = "white";
 }
 
+// Random text color
+function fontColor() {
+    let newColor = getRandomColor();
+    document.body.style.color = newColor;
+}
+function fontColorBack() {
+    document.body.style.color= "black";
+}
 // Print the current page
 
 function print_current_page()
