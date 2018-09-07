@@ -1,8 +1,18 @@
-// 1. Greeting!
+//  Greeting!
 function displayMessage(firstName) {
     alert("Hello " + firstName + ", welcome to JavaScript functions!");
 }
-// 2. Date and Time Function
+
+//  Reverse a string
+var array;
+function reverseString(str) {
+ array = str.split("");
+ array.reverse();
+ str = array.join('');
+ alert("Your string reversed is :  " + str +".")
+}
+
+//  Date and Time Function
 
  function dayAndTime() {
     var today = new Date();
@@ -47,7 +57,7 @@ function displayMessage(firstName) {
 }
 
 
-// 3. Formatted Date
+//  Formatted Date
 
 function formattedDate(){
 var today = new Date();
@@ -72,7 +82,7 @@ today = dd+'-'+mm+'-'+yyyy;
 }
 
 
-// 4. Random Number Game
+//  Random Number Game
 
 function randomNumber(){
 
@@ -116,7 +126,7 @@ document.getElementById("area").innerHTML = area;
 
 }
 
-// 5. Forward and Back Buttons
+//  Forward and Back Buttons
 
 function goBack() {
 	window.history.back();
@@ -128,7 +138,7 @@ function goForward() {
 
 
 
-// 6. Hover message
+//  Hover message
 
 function trigger()
 
@@ -147,7 +157,7 @@ function trigger()
     }
 
 
-// 7. Change Background color
+//  Change Background color
     function changeColor(){
 
         document.getElementById("bgColor").style.backgroundColor = "lightblue";
