@@ -1,8 +1,8 @@
-// Greeting!
+// 1. Greeting!
 function displayMessage(firstName) {
     alert("Hello " + firstName + ", welcome to JavaScript functions!");
 }
-// 1.Date and Time Function
+// 2. Date and Time Function
 
  function dayAndTime() {
     var today = new Date();
@@ -14,32 +14,32 @@ function displayMessage(firstName) {
     var second = today.getSeconds();
     var prepand = (hour >= 12)? " PM ":" AM ";
     hour = (hour >= 12)? hour - 12: hour;
-    if (hour===0 && prepand===' PM ') 
-    { 
+    if (hour===0 && prepand===' PM ')
+    {
     if (minute===0 && second===0)
-    { 
+    {
     hour=12;
     prepand=' Noon';
-    } 
+    }
     else
-    { 
+    {
     hour=12;
     prepand=' PM';
-    } 
-    } 
-    if (hour===0 && prepand===' AM ') 
-    { 
+    }
+    }
+    if (hour===0 && prepand===' AM ')
+    {
     if (minute===0 && second===0)
-    { 
+    {
     hour=12;
     prepand=' Midnight';
-    } 
+    }
     else
-    { 
+    {
     hour=12;
     prepand=' AM';
-    } 
-    } 
+    }
+    }
     var displayTime = ("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 
     document.getElementById("timer").innerHTML = displayDay+' '+ displayTime;
@@ -47,39 +47,29 @@ function displayMessage(firstName) {
 }
 
 
-// 2. Formatted Date
+// 3. Formatted Date
 
 function formattedDate(){
 var today = new Date();
 var dd = today.getDate();
 
-var mm = today.getMonth()+1; 
+var mm = today.getMonth()+1;
 var yyyy = today.getFullYear();
-if(dd<10) 
+if(dd<10)
     {
     dd='0'+dd;
-    } 
+    }
 
-if(mm<10) 
+if(mm<10)
     {
     mm='0'+mm;
-    } 
+    }
 today = mm+'-'+dd+'-'+yyyy;
 document.getElementById("date").innerHTML =(today);
 today = mm+'/'+dd+'/'+yyyy;
 document.getElementById("date2").innerHTML =(today);
 today = dd+'-'+mm+'-'+yyyy;
 }
-
-
-
-// 3.Print the current page
-
-function print_current_page()
-{
-window.print();
-}
-
 
 
 // 4. Random Number Game
@@ -94,7 +84,7 @@ function randomNumber(){
         else
         alert('Not Matched, the number was ' + num);
 
-} 
+}
 
 // Area of a Triangle
 
@@ -136,7 +126,7 @@ function goForward() {
 	window.history.back();
 }
 
-    
+
 
 // 6. Hover message
 
@@ -155,8 +145,8 @@ function trigger()
 	}
 
     }
-    
-    
+
+
 // 7. Change Background color
     function changeColor(){
 
@@ -167,3 +157,39 @@ function trigger()
     function changeBack(){
         document.getElementById("bgColor").style.backgroundColor = "white";
     }
+
+// 8. Change Font Color
+
+    function fontColor() {
+        document.getElementById("fontColor").style.color = "red";
+    }
+
+    function fontColorBack() {
+        document.getElementById("fontColor").style.color= "black";
+    }
+
+// 9. Random Background Color
+
+function getRandomColor(){
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function randomColor(){
+  let newColor = getRandomColor();
+  document.body.style.backgroundColor = newColor;
+}
+
+function changeBackBody(){
+  document.body.style.backgroundColor = "white";
+}
+
+// Print the current page
+
+function print_current_page()
+{
+window.print();
+}
