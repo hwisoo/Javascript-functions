@@ -56,9 +56,9 @@ function capitalizeString(str) {
     prepand=' AM';
     }
     }
-    var displayTime = ("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+    var displayTime = ("Current Time is : "+hour + prepand + " : " + minute + " : " + second);
 
-    document.getElementById("timer").innerHTML = displayDay+' '+ displayTime;
+    alert(displayDay+' '+ displayTime);
 
 }
 
@@ -81,16 +81,15 @@ if(mm<10)
     mm='0'+mm;
     }
 today = mm+'-'+dd+'-'+yyyy;
-document.getElementById("date").innerHTML =(today);
-today = mm+'/'+dd+'/'+yyyy;
-document.getElementById("date2").innerHTML =(today);
-today = dd+'-'+mm+'-'+yyyy;
+alert("Today's date is: " + today);
+
 }
 
 // Convert date to UTC string
 function utcString() {
     var today = new Date();
-    document.getElementById("utc").innerHTML = today.toUTCString();
+    var utcstring = today.toUTCString();
+    alert("Today's date converted to UTC string is: " + utcstring);
 }
 
 
