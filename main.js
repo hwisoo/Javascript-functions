@@ -167,20 +167,15 @@ function trigger()
 
     }
 
+// Capitalize Text
+function capitalize(){
+    document.body.style.textTransform = "uppercase";
+}
+function changeLower(){
+    document.body.style.textTransform = "lowercase";
+}
 
-//  Change Background color
-    function changeColor(){
-
-        document.getElementById("bgColor").style.backgroundColor = "lightblue";
-
-    }
-
-    function changeBack(){
-        document.getElementById("bgColor").style.backgroundColor = "white";
-    }
-
-
-//  Random Background Color
+//  Get Random Color
 
 function getRandomColor(){
   let letters = '0123456789ABCDEF';
@@ -190,6 +185,8 @@ function getRandomColor(){
   }
   return color;
 }
+
+//  Random Background Color
 function randomColor(){
   let newColor = getRandomColor();
   document.body.style.backgroundColor = newColor;
