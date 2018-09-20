@@ -29,3 +29,35 @@ a:not([href]):not([tabindex]) {
 input {
     margin: 5px;
 }
+
+#myDiv{
+  height: 30px;
+  width: 20%;
+  background: black;
+  margin: 20px auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.rect {
+  animation-name: rainbow;
+  animation-duration: 4s;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+    left: 0px;
+    
+  }
+  50% {
+    background-color: green;
+    left: 50px;
+    
+  }
+  100% {
+    background-color: yellow;
+    left: 0px;
+    
+  }
+}

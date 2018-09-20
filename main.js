@@ -204,6 +204,11 @@ function fontColor() {
 function fontColorBack() {
     document.body.style.color= "black";
 }
+
+// Color animation
+function animation(){
+    document.getElementById("myDiv").className = "rect";
+}   
 // Print the current page
 
 function print_current_page()
