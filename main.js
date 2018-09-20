@@ -209,6 +209,10 @@ function fontColorBack() {
 function animation(){
     document.getElementById("myDiv").className = "rect";
 }   
+
+function cancelAnimation(){
+    document.getElementById("myDiv").className = "";
+}
 // Print the current page
 
 function print_current_page()
