@@ -36,44 +36,44 @@ input {
   display: block;
   height: 30px;
   width: 20%;
-  background: black;
+  background: blue;
   margin: 5px auto;
   border-radius: 5px;
   position: relative;
-  float: left;
+  float: top;
 }
 
 .rect {
   animation-name: rainbow;
-  animation-duration: 4s;
+  animation-duration: 5s;
 }
 .clear {
   clear: both;
 }
 @keyframes rainbow {
   0% {
-    background-color: black;
+    background-color: blue;
     left: 0px;
     
   }
 
   25% {
-    background-color: blue;
-    left: 50px;
+    background-color: lightblue;
+    left: -50px;
   }
   50% {
-    background-color: green;
-    left: 200px;
+    background-color: lightcyan;
+    left: -100px;
     
   }
 
   75% {
-    background-color: yellow;
-    left:50px;
+    background-color: darkblue;
+    left: 50px;
   }
   100% {
-    background-color: red;
-    left: 0px;
+    background-color: black;
+    left: 100px;
     
   }
 }
